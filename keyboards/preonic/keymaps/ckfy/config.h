@@ -1,6 +1,6 @@
 #pragma once
 
-#define DEBOUNCE 10
+#define DEBOUNCE 15
 
 #define AUDIO_INIT_DELAY 100
 
