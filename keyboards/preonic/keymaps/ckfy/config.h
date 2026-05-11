@@ -1,10 +1,14 @@
 #pragma once
 
-#define DEBOUNCE 15
+#define DEBOUNCE 10
 
-#define AUDIO_INIT_DELAY 500
 
 #ifdef AUDIO_ENABLE
+    #ifdef AUDIO_INIT_DELAY
+        #undef AUDIO_INIT_DELAY
+    #endif
+    #define AUDIO_INIT_DELAY 1000
+
     #define STARTUP_SONG SONG(PREONIC_SOUND)
     // #define STARTUP_SONG SONG(NO_SOUND)
 
